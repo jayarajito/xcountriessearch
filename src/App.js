@@ -30,6 +30,7 @@ import React, { useEffect, useState } from "react";
 const Card = ({ flagUrl, name, altFlag }) => {
   return (
     <div
+      className="countryCard"
       style={{
         display: "flex",
         justifyContent: "center",
@@ -87,6 +88,17 @@ function App() {
         />
       </div>
       {/* <div>{searchData}</div> */}
+      {/* <div
+        className="countryCard"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          flexWrap: "wrap",
+        }}
+      ></div> */}
+      {/* <h1>Countries</h1> */}
       <div
         className="countryCard"
         style={{
@@ -97,7 +109,6 @@ function App() {
           flexWrap: "wrap",
         }}
       >
-        {/* <h1>Countries</h1> */}
         {filteredCountries.map((country) => (
           <Card
             key={country.cca3}
