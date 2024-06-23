@@ -100,7 +100,6 @@ function App() {
       ></div> */}
       {/* <h1>Countries</h1> */}
       <div
-        className="countryCard"
         style={{
           display: "flex",
           justifyContent: "center",
