@@ -71,7 +71,7 @@ function App() {
       )
     );
   }, [searchData, countries]);
-  console.log({ countries });
+  // console.log({ countries });
   const handleChange = (e) => {
     setSearchData(e.target.value);
   };
